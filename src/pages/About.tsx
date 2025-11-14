@@ -2,9 +2,9 @@ import { Award, Users, Lightbulb, Target } from "lucide-react";
 import { useState } from "react";
 
 const About = () => {
-  const [activeCard, setActiveCard] = useState(null);
+  const [activeCard, setActiveCard] = useState<number | null>(null);
 
-  const toggleCard = (index) => {
+  const toggleCard = (index: number) => {
     setActiveCard(activeCard === index ? null : index);
   };
 
@@ -65,55 +65,54 @@ const About = () => {
 
           {/* ----------- NEW 3 CLICKABLE IMAGE CARDS ----------- */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20 px-4 md:px-0">
-  {[
-    {
-      title: "Founder",
-      img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121563/Baba_yidrwq.jpg",
-      detail:
-        "We design elegant wedding decorations with fresh flowers, lighting, and stage setups that make your special day unforgettable.",
-    },
-    {
-      title: "Owner",
-      img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121849/Papa_zw41tl.jpg",
-      detail:
-        "Professional floral arrangements for meetings, product launches, and award ceremonies that add class and freshness to your corporate events.",
-    },
-    {
-      title: "Co-Owner",
-      img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121861/Ram_bgdwg2.jpg",
-      detail:
-        "Vibrant and colorful birthday decorations with balloons, floral backdrops, and customized themes for all age groups.",
-    },
-  ].map((card, index) => (
-    <div
-      key={index}
-      className="group border border-pink-900/30 rounded-2xl overflow-hidden bg-gradient-to-b from-pink-950/10 to-black/30 hover:shadow-2xl hover:border-pink-500/40 transition-all duration-500"
-    >
-      {/* Image Section */}
-      <div className="overflow-hidden">
-        <img
-          src={card.img}
-          alt={card.title}
-          className=" w-64 h-64 object-cover rounded-full mx-auto mt-4"
-        />
-      </div>
+            {[
+              {
+                title: "Founder",
+                img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121563/Baba_yidrwq.jpg",
+                detail:
+                  "We design elegant wedding decorations with fresh flowers, lighting, and stage setups that make your special day unforgettable.",
+              },
+              {
+                title: "Owner",
+                img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121849/Papa_zw41tl.jpg",
+                detail:
+                  "Professional floral arrangements for meetings, product launches, and award ceremonies that add class and freshness to your corporate events.",
+              },
+              {
+                title: "Co-Owner",
+                img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121861/Ram_bgdwg2.jpg",
+                detail:
+                  "Vibrant and colorful birthday decorations with balloons, floral backdrops, and customized themes for all age groups.",
+              },
+            ].map((card, index) => (
+              <div
+                key={index}
+                className="group border border-pink-900/30 rounded-2xl overflow-hidden bg-gradient-to-b from-pink-950/10 to-black/30 hover:shadow-2xl hover:border-pink-500/40 transition-all duration-500"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={card.img}
+                    alt={card.title}
+                    className=" w-64 h-64 object-cover rounded-full mx-auto mt-4"
+                  />
+                </div>
 
-      {/* Content Section */}
-      <div className="p-6 text-center">
-        <h3
-          onClick={() => toggleCard(index)}
-          className="text-2xl font-playfair font-bold text-pink-400 cursor-pointer hover:underline"
-        >
-          {card.title}
-        </h3>
-        {activeCard === index && (
-          <p className="text-gray-300 mt-4 leading-relaxed">{card.detail}</p>
-        )}
-      </div>
-    </div>
-  ))}
-</div>
-
+                <div className="p-6 text-center">
+                  <h3
+                    onClick={() => toggleCard(index)}
+                    className="text-2xl font-playfair font-bold text-pink-400 cursor-pointer hover:underline"
+                  >
+                    {card.title}
+                  </h3>
+                  {activeCard === index && (
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      {card.detail}
+                    </p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
 
           {/* ----------- STATS SECTION ----------- */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
@@ -210,7 +209,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* ----------- NEW DEVELOPER CARD (JUST ABOVE FOOTER) ----------- */}
+          {/* ----------- DEVELOPER CARD ----------- */}
           <div className="max-w-xl mx-auto text-center border border-pink-900/30 rounded-2xl p-8 bg-gradient-to-br from-pink-900/10 to-transparent mb-12">
             <img
               src="https://res.cloudinary.com/dokijn7ni/image/upload/v1763121872/slogo_tulkxj.jpg"
@@ -222,10 +221,15 @@ const About = () => {
             </h3>
             <p className="text-gray-300 text-lg mt-2">Full Stack Developer</p>
             <p className="text-gray-400 text-sm mt-2">
-              Developer of this website | Passionate about creating smooth, modern, and responsive web experiences.
+              Developer of this website | Passionate about creating smooth,
+              modern, and responsive web experiences.
             </p>
             <p className="text-gray-400 text-sm mt-3">
-              📧 <a href="mailto:shivamsaini01364@gmail.com" className="underline text-pink-400">
+              📧{" "}
+              <a
+                href="mailto:shivamsaini01364@gmail.com"
+                className="underline text-pink-400"
+              >
                 shivamsaini01364@gmail.com
               </a>
             </p>
