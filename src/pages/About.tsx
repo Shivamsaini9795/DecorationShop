@@ -68,19 +68,19 @@ const About = () => {
   {[
     {
       title: "Founder",
-      img: "./Baba.jpg",
+      img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121563/Baba_yidrwq.jpg",
       detail:
         "We design elegant wedding decorations with fresh flowers, lighting, and stage setups that make your special day unforgettable.",
     },
     {
       title: "Owner",
-      img: "./Papa.jpg",
+      img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121849/Papa_zw41tl.jpg",
       detail:
         "Professional floral arrangements for meetings, product launches, and award ceremonies that add class and freshness to your corporate events.",
     },
     {
       title: "Co-Owner",
-      img: "./Ram.jpg",
+      img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121861/Ram_bgdwg2.jpg",
       detail:
         "Vibrant and colorful birthday decorations with balloons, floral backdrops, and customized themes for all age groups.",
     },
@@ -213,7 +213,7 @@ const About = () => {
           {/* ----------- NEW DEVELOPER CARD (JUST ABOVE FOOTER) ----------- */}
           <div className="max-w-xl mx-auto text-center border border-pink-900/30 rounded-2xl p-8 bg-gradient-to-br from-pink-900/10 to-transparent mb-12">
             <img
-              src="./slogo.jpg"
+              src="https://res.cloudinary.com/dokijn7ni/image/upload/v1763121872/slogo_tulkxj.jpg"
               alt="Shivam Saini"
               className="w-32 h-32 mx-auto rounded-full object-cover border-2 border-pink-400 mb-4"
             />
