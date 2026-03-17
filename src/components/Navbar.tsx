@@ -25,10 +25,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-pink-900/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-<<<<<<< HEAD
         
-=======
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
         {/* 🌸 Logo */}
         <Link to="/" className="flex items-center space-x-2 group">
           <Flower2 className="h-8 w-8 text-pink-400 group-hover:rotate-12 transition-transform duration-300" />
@@ -53,14 +50,11 @@ const Navbar = () => {
             </Link>
           ))}
 
-<<<<<<< HEAD
           {/* 🔥 Clean Translator (no globe) */}
           <div className="ml-4 flex items-center bg-black/30 px-2 py-1 rounded-full border border-pink-900/30">
-=======
           {/* 🌍 Google Translate with Globe icon */}
           <div className="ml-4 flex items-center space-x-2 bg-black/30 px-3 py-2 rounded-lg border border-pink-900/30">
             <Globe className="h-5 w-5 text-pink-400" />
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
             <GoogleTranslate />
           </div>
         </div>
@@ -93,14 +87,11 @@ const Navbar = () => {
               </Link>
             ))}
 
-<<<<<<< HEAD
             {/* 🔥 Mobile Translator */}
             <div className="mt-4 flex items-center justify-center bg-black/30 px-2 py-1 rounded-full border border-pink-900/30">
-=======
             {/* 🌍 Google Translate visible in mobile */}
             <div className="mt-4 flex items-center justify-center space-x-2 bg-black/30 px-3 py-2 rounded-lg border border-pink-900/30">
               <Globe className="h-5 w-5 text-pink-400" />
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
               <GoogleTranslate />
             </div>
           </div>
@@ -110,8 +101,5 @@ const Navbar = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Navbar;
-=======
 export default Navbar;
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
