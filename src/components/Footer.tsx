@@ -72,7 +72,11 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
+<<<<<<< HEAD
                 href="https://www.instagram.com/shivam_flower_decoration?igsh=MTcwYWtzczBlZHJkdg=="
+=======
+                href=""
+>>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
                 className="p-2 bg-pink-500/10 rounded-lg text-pink-400 hover:bg-pink-500/20 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
