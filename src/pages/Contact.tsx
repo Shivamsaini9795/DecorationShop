@@ -134,11 +134,8 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white placeholder-gray-500 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/20"
-<<<<<<< HEAD
                     placeholder="Enter Your Name"
-=======
                     placeholder="John Doe"
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
                   />
                 </div>
 
@@ -154,11 +151,8 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white placeholder-gray-500 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/20"
-<<<<<<< HEAD
                     placeholder="name@example.com"
-=======
                     placeholder="john@example.com"
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
                   />
                 </div>
 
@@ -175,11 +169,8 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white placeholder-gray-500 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/20"
-<<<<<<< HEAD
                     placeholder="e.g. 979*****01"
-=======
                     placeholder="e.g. 9876543210"
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
                   />
                 </div>
 

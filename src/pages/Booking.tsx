@@ -125,11 +125,8 @@ const Booking = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white"
-<<<<<<< HEAD
                     placeholder="Enter Your Name"
-=======
                     placeholder="Jane Smith"
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
                   />
                 </div>
 
@@ -145,11 +142,8 @@ const Booking = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white"
-<<<<<<< HEAD
                     placeholder="+91 98******10"
-=======
                     placeholder="+91 98765 43210"
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
                   />
                 </div>
               </div>

@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-<<<<<<< HEAD
-import { Menu, X, Flower2 } from "lucide-react"; // ❌ Globe removed
-=======
-import { Menu, X, Flower2, Globe } from "lucide-react"; // 👈 Globe icon added
->>>>>>> 85b4ca933f1874499fa12c4c4a2c6583d1ad0668
-import GoogleTranslate from "./GoogleTranslate.tsx";
+import { Menu, X, Flower2, Globe } from "lucide-react";
+import GoogleTranslate from "./GoogleTranslate";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,9 +46,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* 🔥 Clean Translator (no globe) */}
-          <div className="ml-4 flex items-center bg-black/30 px-2 py-1 rounded-full border border-pink-900/30">
-          {/* 🌍 Google Translate with Globe icon */}
+          {/* 🌍 Translator */}
           <div className="ml-4 flex items-center space-x-2 bg-black/30 px-3 py-2 rounded-lg border border-pink-900/30">
             <Globe className="h-5 w-5 text-pink-400" />
             <GoogleTranslate />
@@ -68,7 +62,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* 📱 Mobile Dropdown Menu */}
+      {/* 📱 Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-black/95 border-t border-pink-900/20">
           <div className="flex flex-col px-4 py-3 space-y-2">
@@ -77,7 +71,7 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                className={`block px-4 py-2 rounded-lg text-sm font-medium ${
                   isActive(link.path)
                     ? "bg-pink-500/20 text-pink-400"
                     : "text-gray-300 hover:text-pink-400 hover:bg-pink-500/10"
@@ -87,9 +81,7 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* 🔥 Mobile Translator */}
-            <div className="mt-4 flex items-center justify-center bg-black/30 px-2 py-1 rounded-full border border-pink-900/30">
-            {/* 🌍 Google Translate visible in mobile */}
+            {/* 🌍 Mobile Translator */}
             <div className="mt-4 flex items-center justify-center space-x-2 bg-black/30 px-3 py-2 rounded-lg border border-pink-900/30">
               <Globe className="h-5 w-5 text-pink-400" />
               <GoogleTranslate />
@@ -101,5 +93,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
 export default Navbar;
