@@ -12,16 +12,28 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Booking from "./pages/Booking";
 
+// ✅ TypeScript fix for Crisp
+declare global {
+  interface Window {
+    $crisp: any;
+    CRISP_WEBSITE_ID: string;
+  }
+}
+
 function App() {
 
-  // 🔥 Crisp Chat Integration
+  // 🔥 Crisp Chat Integration (FINAL FIX)
   useEffect(() => {
     window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "c57e0796-3602-462e-9887-b4bfef3b987f";
+    window.CRISP_WEBSITE_ID = "c5760796-3602-462e-9887-b4bfef3b987f";
+
+    // 🔥 Reset old session (VERY IMPORTANT)
+    window.$crisp.push(["do", "session:reset"]);
 
     const script = document.createElement("script");
     script.src = "https://client.crisp.chat/l.js";
     script.async = true;
+
     document.head.appendChild(script);
   }, []);
 
