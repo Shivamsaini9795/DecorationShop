@@ -17,7 +17,7 @@ function App() {
   // 🔥 Crisp Chat Integration
   useEffect(() => {
     window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "57e0796-3602-462e-9887-b4bfef3b987f";
+    window.CRISP_WEBSITE_ID = "c57e0796-3602-462e-9887-b4bfef3b987f";
 
     const script = document.createElement("script");
     script.src = "https://client.crisp.chat/l.js";
