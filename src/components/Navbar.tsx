@@ -48,7 +48,7 @@ const Navbar = () => {
 
           {/* 🌍 Translator */}
           <div className="ml-4 flex items-center space-x-2 bg-black/30 px-3 py-2 rounded-lg border border-pink-900/30">
-            <Globe className="h-5 w-5 text-pink-400" />
+           
             <GoogleTranslate />
           </div>
         </div>
