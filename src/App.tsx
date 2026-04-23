@@ -4,13 +4,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-
+import BookingSuccess from "./pages/BookingSuccess";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Booking from "./pages/Booking";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+
+import { CartProvider } from "./context/CartContext"; // ⭐ ADD THIS
 
 // ✅ TypeScript fix for Crisp
 declare global {
@@ -22,12 +26,10 @@ declare global {
 
 function App() {
 
-  // 🔥 Crisp Chat Integration (FINAL FIX)
   useEffect(() => {
     window.$crisp = [];
     window.CRISP_WEBSITE_ID = "c5760796-3602-462e-9887-b4bfef3b987f";
 
-    // 🔥 Reset old session (VERY IMPORTANT)
     window.$crisp.push(["do", "session:reset"]);
 
     const script = document.createElement("script");
@@ -38,23 +40,32 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="min-h-screen">
-        <Navbar />
+    <CartProvider> {/* ⭐ WRAP HERE */}
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/booking" element={<Booking />} />
-        </Routes>
+      <Router>
 
-        <Footer />
-        <ScrollToTop />
-      </div>
-    </Router>
+        <div className="min-h-screen">
+
+          <Navbar />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/booking-success" element={<BookingSuccess />} />
+          </Routes>
+
+          <Footer />
+          <ScrollToTop />
+
+        </div>
+
+      </Router>
+
+    </CartProvider>
   );
 }
 

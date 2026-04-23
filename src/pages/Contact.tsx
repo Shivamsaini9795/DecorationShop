@@ -135,7 +135,7 @@ const Contact = () => {
                     required
                     className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white placeholder-gray-500 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/20"
                     placeholder="Enter Your Name"
-                    placeholder="John Doe"
+                   
                   />
                 </div>
 
@@ -152,7 +152,7 @@ const Contact = () => {
                     required
                     className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white placeholder-gray-500 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/20"
                     placeholder="name@example.com"
-                    placeholder="john@example.com"
+                    
                   />
                 </div>
 
@@ -170,7 +170,7 @@ const Contact = () => {
                     required
                     className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white placeholder-gray-500 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/20"
                     placeholder="e.g. 979*****01"
-                    placeholder="e.g. 9876543210"
+                   
                   />
                 </div>
 
