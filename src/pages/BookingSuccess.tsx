@@ -2,18 +2,19 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { CheckCircle } from "lucide-react";
 import { useEffect } from "react";
 
-useEffect(() => {
-  document.body.style.overflow = "auto";
-  document.body.style.position = "static";
-  window.scrollTo(0, 0);
-}, []);
-
 const BookingSuccess = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
 
   const data: any = location.state || {};
+
+  // ✅ FIX: moved inside component (NO OTHER CHANGE)
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+    document.body.style.position = "static";
+    window.scrollTo(0, 0);
+  }, []);
 
   // ⭐ Summary formatter
   const formatSummary = (text?: string) => {
