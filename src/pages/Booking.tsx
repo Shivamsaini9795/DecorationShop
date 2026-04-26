@@ -45,13 +45,32 @@ const Booking = () => {
   const [offer, setOffer] = useState("");
   const [discount, setDiscount] = useState(0);
   const [paymentDone, setPaymentDone] = useState(false);
-
+  const [fullDates, setFullDates] = useState<string[]>([]);
   const travelCharge = Math.round(distance * 20);
   const totalPrice = servicePrice + designPrice + travelCharge;
   const finalPrice = offer ? Number(offer) : totalPrice;
   const minAdvance = Math.round(totalPrice * 0.25);
   const [advancePayment, setAdvancePayment] = useState(minAdvance);
   const remainingPayment = Math.max(totalPrice - advancePayment, 0);
+  const formatDate = (date: Date) => {
+    return date.toISOString().split("T")[0];
+  };
+
+  useEffect(() => {
+    const fetchFullDates = async () => {
+      try {
+        const res = await axios.get(
+          "https://flower-yzko.onrender.com/api/bookings/full-dates"
+        );
+        setFullDates(res.data);
+      } catch (err) {
+        console.error("Error fetching full dates", err);
+      }
+    };
+
+    fetchFullDates();
+  }, []);
+
   useEffect(() => {
 
     const newMinAdvance = Math.round(totalPrice * 0.25);
@@ -79,6 +98,13 @@ const Booking = () => {
     advancePayment >= minAdvance;
 
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
+  const formatDateLocal = (date: Date) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+};
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const apiUrl =
@@ -95,14 +121,21 @@ const Booking = () => {
   };
 
   const handleDateChange = (date: Date | null) => {
+    if (!date) return;
+
+    const formatted = formatDateLocal(date);
+
+    // 🔴 FULL DATE CHECK
+    if (fullDates.includes(formatted)) {
+      alert("❌ This date is fully booked");
+      return; // stop selection
+    }
+
     setSelectedDate(date);
 
-    const nextDate = date
-      ? `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
-        2,
-        "0",
-      )}-${String(date.getDate()).padStart(2, "0")}`
-      : "";
+    const nextDate = `${date.getFullYear()}-${String(
+      date.getMonth() + 1
+    ).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 
     setFormData({ ...formData, eventDate: nextDate });
   };
@@ -214,10 +247,10 @@ const Booking = () => {
 
         handler: async function () {
 
-                    document.body.style.overflow = "auto";   
-                    document.body.style.position = "static"; 
-                    window.scrollTo(0, 0);  
-                    setPaymentDone(true);
+          document.body.style.overflow = "auto";
+          document.body.style.position = "static";
+          window.scrollTo(0, 0);
+          setPaymentDone(true);
 
           const payload = {
             ...formData,
@@ -520,6 +553,26 @@ const Booking = () => {
                   required
                   placeholderText="Select event date"
                   className="w-full px-4 py-3 bg-black/30 border border-pink-900/30 rounded-lg text-white focus:border-pink-500 outline-none"
+
+                  dayClassName={(date) => {
+                    const formatted = formatDateLocal(date);
+
+                    const today = new Date();
+                    today.setHours(0, 0, 0, 0);
+
+                    // ❌ past dates
+                    if (date < today) {
+                      return "past-day";
+                    }
+
+                    // 🔴 full booked
+                    if (fullDates.includes(formatted)) {
+                      return "full-day";
+                    }
+
+                    // 🟢 available
+                    return "available-day";
+                  }}
                 />
               </div>
 
