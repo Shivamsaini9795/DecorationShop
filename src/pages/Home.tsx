@@ -10,7 +10,7 @@ const Home = () => {
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-playfair font-bold text-pink-400 mb-6 animate-fade-in">
-            Shivam Flower Decoration
+            Event Booking System
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
             Crafting Elegant Floral Moments for Your Most Precious Celebrations

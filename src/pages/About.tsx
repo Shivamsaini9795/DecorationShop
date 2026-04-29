@@ -31,36 +31,28 @@ const About = () => {
                 Where Beauty Meets Purpose
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                Founded in 2015, Bloom & Bliss began with a simple vision: to
-                bring joy and beauty into people's lives through the art of floral
-                design. What started as a small boutique studio has blossomed into
-                a premier destination for exquisite flower arrangements and event
-                decoration.
+                Founded in 1980, Shivam Flower Decoration began as a small-scale family venture with a simple vision—to bring beauty, joy, and elegance into people’s lives through the art of decoration. What started as a humble initiative by our founder, Chhedi Saini, has grown into a trusted name in floral design and event decoration.
+              </p>
+
+              <p className="text-gray-300 leading-relaxed">
+                In 2012, we expanded our journey by opening a new branch in Dohrighat, marking an important milestone in our growth and commitment to serving more customers with excellence.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                Our founder, inspired by nature's endless beauty and the power of
-                flowers to transform spaces and emotions, dedicated years to
-                mastering the craft of floral artistry. Today, our team of
-                passionate designers continues that legacy, creating stunning
-                arrangements that tell stories and capture hearts.
-              </p>
-              <p className="text-gray-300 leading-relaxed">
-                Every petal, every stem, every color is chosen with intention. We
-                believe that flowers are more than decoration—they're expressions
-                of love, celebration, remembrance, and hope.
+                Today, our team of skilled designers continues this legacy, creating stunning decorations that transform spaces and create unforgettable memories.
+
+                Every flower, every detail, every arrangement is crafted with care. We believe decoration is not just about appearance—it’s about emotions, celebrations, traditions, and creating moments that last forever.
               </p>
             </div>
 
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden border-2 border-pink-900/30">
                 <img
-                  src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://res.cloudinary.com/dokijn7ni/image/upload/v1777490963/eU7W8Zk0h6C7RXiCSmQTOQfoU0JUi51qmQrfmarzcIG2QsvGeJYS2jSGMA2jnGZNI1lcluiioSGZ7aUXjODjQwYleIQfi__AdLXnPGjL89p7OC94-NtjR3PzSxoSlMtyg3sy8e4UhiIxWfAF5uc0yKwvfgaoxiXaR4RAExuSC4cNrDyiG3zOUtxd05TPPcha_be7xi8.jpg"
                   alt="Flower arrangement"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-pink-500/10 rounded-2xl border border-pink-500/30 -z-10"></div>
-            </div>
+              </div>
           </div>
 
           {/* ----------- NEW 3 CLICKABLE IMAGE CARDS ----------- */}
@@ -69,20 +61,47 @@ const About = () => {
               {
                 title: "Founder",
                 img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121563/Baba_yidrwq.jpg",
-                detail:
-                  "We design elegant wedding decorations with fresh flowers, lighting, and stage setups that make your special day unforgettable.",
+                detail: (
+                  <>
+                    Inspired by the vision of our founder,{" "}
+                    <span className="font-bold text-red-500">
+                      Chhedi Saini
+                    </span>
+                    , we create elegant wedding decorations using fresh flowers, creative
+                    lighting, and beautifully designed stage setups that turn every celebration
+                    into a memorable experience.
+                  </>
+                ),
               },
               {
                 title: "Owner",
                 img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121849/Papa_zw41tl.jpg",
-                detail:
-                  "Professional floral arrangements for meetings, product launches, and award ceremonies that add class and freshness to your corporate events.",
+                detail: (
+                  <>
+                    Under the leadership of{" "}
+                    <span className="font-bold text-red-500">
+                      Paras Saini
+                    </span>{" "}
+                    since 2005, we specialize in professional floral arrangements for meetings,
+                    product launches, and award ceremonies, adding sophistication and freshness
+                    to every corporate event.
+                  </>
+                ),
               },
               {
                 title: "Co-Owner",
                 img: "https://res.cloudinary.com/dokijn7ni/image/upload/v1763121861/Ram_bgdwg2.jpg",
-                detail:
-                  "Vibrant and colorful birthday decorations with balloons, floral backdrops, and customized themes for all age groups.",
+                detail: (
+                  <>
+                    Under the management of{" "}
+                    <span className="font-bold text-red-500 ">
+                      Ramnayan Saini
+                    </span>{" "}
+                    since 2012 in Dohrighat, we specialize in vibrant birthday decorations,
+                    customized themes, and also provide wholesale & retail flower supply along
+                    with all types of decoration materials.
+                  </>
+                ),
               },
             ].map((card, index) => (
               <div
@@ -117,19 +136,19 @@ const About = () => {
           {/* ----------- STATS SECTION ----------- */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             <div className="text-center p-8 bg-gradient-to-br from-pink-900/10 to-transparent border border-pink-900/20 rounded-2xl">
-              <div className="text-4xl font-bold text-pink-400 mb-2">500+</div>
+              <div className="text-4xl font-bold text-pink-400 mb-2">12000+</div>
               <div className="text-gray-400">Events Decorated</div>
             </div>
             <div className="text-center p-8 bg-gradient-to-br from-pink-900/10 to-transparent border border-pink-900/20 rounded-2xl">
-              <div className="text-4xl font-bold text-pink-400 mb-2">1000+</div>
+              <div className="text-4xl font-bold text-pink-400 mb-2">2000+</div>
               <div className="text-gray-400">Happy Clients</div>
             </div>
             <div className="text-center p-8 bg-gradient-to-br from-pink-900/10 to-transparent border border-pink-900/20 rounded-2xl">
-              <div className="text-4xl font-bold text-pink-400 mb-2">15+</div>
+              <div className="text-4xl font-bold text-pink-400 mb-2">50+</div>
               <div className="text-gray-400">Awards Won</div>
             </div>
             <div className="text-center p-8 bg-gradient-to-br from-pink-900/10 to-transparent border border-pink-900/20 rounded-2xl">
-              <div className="text-4xl font-bold text-pink-400 mb-2">9</div>
+              <div className="text-4xl font-bold text-pink-400 mb-2">30</div>
               <div className="text-gray-400">Years Experience</div>
             </div>
           </div>

@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <Flower2 className="h-8 w-8 text-pink-400" />
               <span className="text-base font-playfair font-bold text-pink-400">
-                Shivam Flower Decoration
+                Event Booking System
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
