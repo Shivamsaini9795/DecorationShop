@@ -54,7 +54,7 @@ const Services = () => {
         'Center table flowers',
         'Lighting setup'
       ],
-      image: 'https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777625431/WhatsApp_Image_2026-05-01_at_2.15.49_PM_nyw6bm.jpg'
     },
 
     {
@@ -70,7 +70,7 @@ const Services = () => {
         'Floral seating area',
         'Photo corner'
       ],
-      image: 'https://images.pexels.com/photos/931162/pexels-photo-931162.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777622869/WhatsApp_Image_2026-05-01_at_1.36.34_PM_zp4nkk.jpg'
     },
 
     {
@@ -86,7 +86,7 @@ const Services = () => {
         'Light decoration',
         'Photo booth'
       ],
-      image: 'https://images.pexels.com/photos/1059111/pexels-photo-1059111.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777623743/IMG_9353.JPEG_v5wvvp.webp'
     },
 
     {
@@ -102,7 +102,7 @@ const Services = () => {
         'Theme balloons',
         'Photo backdrop'
       ],
-      image: 'https://images.pexels.com/photos/1449056/pexels-photo-1449056.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777623861/1727785777pixelcut-export-_18_cnerin.webp'
     },
 
     {
@@ -118,7 +118,7 @@ const Services = () => {
         'Flower decoration',
         'Romantic lighting'
       ],
-      image: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777624057/fe7f48af3b6b733828db9c68ba90fe38_z9vgxs.jpg'
     },
 
     {
@@ -133,7 +133,7 @@ const Services = () => {
         'Bonnet flowers',
         'Door handles flowers'
       ],
-      image: 'https://images.pexels.com/photos/1565352/pexels-photo-1565352.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777624191/SKU-1808_0-1739082657175_tq2i6b.webp'
     },
 
     {
@@ -148,7 +148,7 @@ const Services = () => {
         'Lighting setup',
         'Curtain draping'
       ],
-      image: 'https://images.pexels.com/photos/2749158/pexels-photo-2749158.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777624386/copy_of_whatsapp_image_2026-05-01_at_20114_pm_ezywvr_6374eb.jpg'
     },
 
     {
@@ -163,7 +163,7 @@ const Services = () => {
         'Entrance decoration',
         'LED lights'
       ],
-      image: 'https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777624496/event-decoration_nduueq.jpg'
     },
 
     {
@@ -178,7 +178,7 @@ const Services = () => {
         'Cake table setup',
         'Photo booth'
       ],
-      image: 'https://images.pexels.com/photos/1903611/pexels-photo-1903611.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777624603/1687940419_original_zhtay3.jpg'
     },
 
     {
@@ -193,7 +193,7 @@ const Services = () => {
         'Entrance decoration',
         'Brand setup'
       ],
-      image: 'https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777624790/1677139298005_stwgbr.jpg'
     },
 
     {
@@ -208,7 +208,7 @@ const Services = () => {
         'LED lights',
         'Flower decoration'
       ],
-      image: 'https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg'
+      image: 'https://res.cloudinary.com/dokijn7ni/image/upload/v1777624868/dff3809d46404aca9fd3db68e16ca90e.0000000_v0zha2.jpg'
     }
 
   ];

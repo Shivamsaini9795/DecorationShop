@@ -52,7 +52,7 @@ const Gallery = () => {
         {
           name: "Classic",
           price: 0,
-          image: "https://images.unsplash.com/photo-1519741497674-611481863552",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777625431/WhatsApp_Image_2026-05-01_at_2.15.49_PM_nyw6bm.jpg",
           features: ["Stage decoration", "Flower gate", "Lighting"]
         },
         {
@@ -86,7 +86,7 @@ const Gallery = () => {
         {
           name: "Classic Haldi",
           price: 0,
-          image: "https://images.unsplash.com/photo-1606800052052-a08af7148866",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777622869/WhatsApp_Image_2026-05-01_at_1.36.34_PM_zp4nkk.jpg",
           features: ["Marigold decor", "Haldi seating", "Flower backdrop"]
         },
         {
@@ -120,7 +120,7 @@ const Gallery = () => {
         {
           name: "Classic Mehndi",
           price: 0,
-          image: "https://images.unsplash.com/photo-1603575448366-153f093fd0ea",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777623743/IMG_9353.JPEG_v5wvvp.webp",
           features: ["Floral decor", "Seating", "Backdrop decor"]
         },
         {
@@ -154,7 +154,7 @@ const Gallery = () => {
         {
           name: "Classic",
           price: 0,
-          image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777624191/SKU-1808_0-1739082657175_tq2i6b.webp",
           features: ["Bonnet flowers", "Ribbon decor", "Front flower strip"]
         },
         {
@@ -188,7 +188,7 @@ const Gallery = () => {
         {
           name: "Classic Balloon",
           price: 0,
-          image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777623861/1727785777pixelcut-export-_18_cnerin.webp",
           features: ["Balloon decor", "Cake table", "Backdrop"]
         },
         {
@@ -222,7 +222,7 @@ const Gallery = () => {
         {
           name: "Classic",
           price: 0,
-          image: "https://images.unsplash.com/photo-1520854221256-17451cc331bf",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777624057/fe7f48af3b6b733828db9c68ba90fe38_z9vgxs.jpg",
           features: ["Table decor", "Flowers", "Candles"]
         },
         {
@@ -256,7 +256,7 @@ const Gallery = () => {
         {
           name: "Classic",
           price: 0,
-          image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777624496/event-decoration_nduueq.jpg",
           features: ["Stage decor", "Flowers", "Backdrop"]
         },
         {
@@ -290,7 +290,7 @@ const Gallery = () => {
         {
           name: "Classic",
           price: 0,
-          image: "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777624603/1687940419_original_zhtay3.jpg",
           features: ["Balloon decor", "Backdrop", "Cake table"]
         },
         {
@@ -324,7 +324,7 @@ const Gallery = () => {
         {
           name: "Classic",
           price: 0,
-          image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777624868/dff3809d46404aca9fd3db68e16ca90e.0000000_v0zha2.jpg",
           features: ["Rose path", "Candles", "Table setup"]
         },
         {
@@ -358,7 +358,7 @@ const Gallery = () => {
         {
           name: "Classic",
           price: 0,
-          image: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe",
+          image: "https://res.cloudinary.com/dokijn7ni/image/upload/v1777624790/1677139298005_stwgbr.jpg",
           features: ["Stage", "Lighting", "Backdrop"]
         },
         {
